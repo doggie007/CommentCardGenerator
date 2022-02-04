@@ -14,6 +14,11 @@
 		1ECE75D027AD4C58003BD80F /* CommentCardGeneratorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE75CF27AD4C58003BD80F /* CommentCardGeneratorAppTests.swift */; };
 		1ECE75DA27AD4C58003BD80F /* CommentCardGeneratorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE75D927AD4C58003BD80F /* CommentCardGeneratorAppUITests.swift */; };
 		1ECE75DC27AD4C58003BD80F /* CommentCardGeneratorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE75DB27AD4C58003BD80F /* CommentCardGeneratorAppUITestsLaunchTests.swift */; };
+		1ECE75EA27AD4CB1003BD80F /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE75E927AD4CB1003BD80F /* GeneratorView.swift */; };
+		1ECE75ED27AD4F83003BD80F /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE75EC27AD4F83003BD80F /* Generator.swift */; };
+		1ECE75EF27AD4FEF003BD80F /* RadioButtonsChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE75EE27AD4FEF003BD80F /* RadioButtonsChoices.swift */; };
+		1ECE75F127AD5311003BD80F /* RadioButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE75F027AD5311003BD80F /* RadioButtons.swift */; };
+		1ECE75F327AD5A05003BD80F /* CommentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE75F227AD5A05003BD80F /* CommentCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		1ECE75D527AD4C58003BD80F /* CommentCardGeneratorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentCardGeneratorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ECE75D927AD4C58003BD80F /* CommentCardGeneratorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorAppUITests.swift; sourceTree = "<group>"; };
 		1ECE75DB27AD4C58003BD80F /* CommentCardGeneratorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1ECE75E927AD4CB1003BD80F /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
+		1ECE75EC27AD4F83003BD80F /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		1ECE75EE27AD4FEF003BD80F /* RadioButtonsChoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonsChoices.swift; sourceTree = "<group>"; };
+		1ECE75F027AD5311003BD80F /* RadioButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtons.swift; sourceTree = "<group>"; };
+		1ECE75F227AD5A05003BD80F /* CommentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				1ECE75BE27AD4C54003BD80F /* CommentCardGeneratorAppApp.swift */,
-				1ECE75C027AD4C54003BD80F /* ContentView.swift */,
+				1ECE75EB27AD4F6A003BD80F /* Models */,
+				1ECE75E827AD4CA1003BD80F /* Views */,
 				1ECE75C227AD4C57003BD80F /* Assets.xcassets */,
 				1ECE75C427AD4C57003BD80F /* Preview Content */,
 			);
@@ -125,6 +136,26 @@
 				1ECE75DB27AD4C58003BD80F /* CommentCardGeneratorAppUITestsLaunchTests.swift */,
 			);
 			path = CommentCardGeneratorAppUITests;
+			sourceTree = "<group>";
+		};
+		1ECE75E827AD4CA1003BD80F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1ECE75C027AD4C54003BD80F /* ContentView.swift */,
+				1ECE75E927AD4CB1003BD80F /* GeneratorView.swift */,
+				1ECE75F027AD5311003BD80F /* RadioButtons.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1ECE75EB27AD4F6A003BD80F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1ECE75EC27AD4F83003BD80F /* Generator.swift */,
+				1ECE75EE27AD4FEF003BD80F /* RadioButtonsChoices.swift */,
+				1ECE75F227AD5A05003BD80F /* CommentCard.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ECE75F327AD5A05003BD80F /* CommentCard.swift in Sources */,
+				1ECE75EA27AD4CB1003BD80F /* GeneratorView.swift in Sources */,
+				1ECE75F127AD5311003BD80F /* RadioButtons.swift in Sources */,
+				1ECE75ED27AD4F83003BD80F /* Generator.swift in Sources */,
+				1ECE75EF27AD4FEF003BD80F /* RadioButtonsChoices.swift in Sources */,
 				1ECE75C127AD4C54003BD80F /* ContentView.swift in Sources */,
 				1ECE75BF27AD4C54003BD80F /* CommentCardGeneratorAppApp.swift in Sources */,
 			);
