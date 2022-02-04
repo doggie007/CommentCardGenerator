@@ -14,4 +14,6 @@ struct Generator{
     var most_difficult: String = ""
 //    var performance: Choices?
     var additionalComment: String = ""
+    
+    static var generator_details = Generator(enjoyment: Choices.very, most_enjoyment: "searching algorithms", difficulty: Choices.ok, most_difficult: "boolean algebra", additionalComment: "I will definitely do this subject for A-levels.")
 }

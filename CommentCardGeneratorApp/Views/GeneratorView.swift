@@ -21,7 +21,7 @@ struct GeneratorView: View {
                     }
                     Section(header:Text("Difficulties")){
                         
-                        RadioButtons(choiceNames: ["Pretty tought","Manageable","EZ"],question:"How difficult do you find the subject?")
+                        RadioButtons(choiceNames: ["Pretty tough","Manageable","EZ"],question:"How difficult do you find the subject?")
                         TextField("What you find most difficult", text: $generator.most_difficult)
                         
                     }
