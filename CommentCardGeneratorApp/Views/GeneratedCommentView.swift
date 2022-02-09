@@ -10,7 +10,23 @@ import SwiftUI
 struct GeneratedCommentView: View {
     var generator: Generator
     var body: some View {
-        Text(CommentCard(details: self.generator))
+        NavigationView{
+            VStack{
+                Text("")
+                Text(CommentCard(details: self.generator).text)
+                    .padding()
+                HStack{
+                    Label("Copy",systemImage:"doc.on.doc.fill")
+                    Spacer()
+                    Label("Edit",systemImage:"square.and.pencil")
+                    Spacer()
+                    Label("Save",systemImage:"square.and.arrow.down.on.square")
+                }.padding()
+                
+            }
+        }.navigationTitle("Your New Comment")
+        
+        
     }
 }
 

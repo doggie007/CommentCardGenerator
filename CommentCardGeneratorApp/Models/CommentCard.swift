@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CommentCard: StringProtocol{
+class CommentCard{
     var text: String
     static func generateComment(details: Generator) -> String{
         var comment: String = ""

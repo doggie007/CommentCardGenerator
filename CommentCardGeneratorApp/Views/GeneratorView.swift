@@ -18,18 +18,23 @@ struct GeneratorView: View {
                     Section(header: Text("enjoyment")){
                         RadioButtons(choiceNames: ["A lot","Very","Not very"],question:"How much do you enjoy the subject?")
                         TextField("What you enjoy most", text: $generator.most_enjoyment)
+                            .autocapitalization(.none)
                     }
                     Section(header:Text("Difficulties")){
                         
                         RadioButtons(choiceNames: ["Pretty tough","Manageable","EZ"],question:"How difficult do you find the subject?")
                         TextField("What you find most difficult", text: $generator.most_difficult)
+                            .autocapitalization(.none)
                         
                     }
                     Section{
                         TextField("Additional comments", text: $generator.additionalComment)
+                            .autocapitalization(.none)
                     }
-                    Button(action:{}){
-                        Text("Activate Generator")
+
+                    NavigationLink(destination: GeneratedCommentView(generator: generator)){
+                        Text("Generate")
+                            .foregroundColor(.blue)
                     }
                     
                 }
