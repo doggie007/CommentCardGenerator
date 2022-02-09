@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GeneratedCommentView: View {
-    var generator: Generator
+    var generator: GeneratorDetails
     var body: some View {
         NavigationView{
             VStack{
@@ -32,6 +32,6 @@ struct GeneratedCommentView: View {
 
 struct GeneratedCommentView_Previews: PreviewProvider {
     static var previews: some View {
-        GeneratedCommentView(generator: Generator.generator_details)
+        GeneratedCommentView(generator: GeneratorDetails.generator_details)
     }
 }

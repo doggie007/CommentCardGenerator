@@ -9,7 +9,7 @@ import Foundation
 
 class CommentCard{
     var text: String
-    static func generateComment(details: Generator) -> String{
+    static func generateComment(details: GeneratorDetails) -> String{
         var comment: String = ""
         let enjoyment = details.enjoyment
         let difficulty = details.difficulty
@@ -35,7 +35,7 @@ class CommentCard{
         comment += details.additionalComment
         return comment
     }
-    init(details: Generator){
+    init(details: GeneratorDetails){
         self.text = CommentCard.generateComment(details: details)
     }
 }
